@@ -1,0 +1,27 @@
+body {
+    background-color: #333333;
+}
+
+.sidebar {
+    background-color: #444444;
+    width: 25%;
+}
+
+.sidebarButton {
+    background-color: #444444;
+    border: none;
+    color: #DDDDDD;
+    text-align: center;
+    display: block;
+    transition-duration: 0.4s;
+}
+
+.sidebarButton:hover {
+    background-color: #333333;
+    border: none;
+    color: #DDDDDD;
+}
+
+.currentProject {
+    position: absolute;
+}
