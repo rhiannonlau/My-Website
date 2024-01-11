@@ -1,0 +1,114 @@
+body {
+    background-color: #333333;
+}
+
+.large {
+    font-size: 18px!important;
+}
+
+.xlarge {
+    font-size: 24px!important;
+}
+
+.white {
+    color: #DDDDDD;
+    padding: 0px 50px
+}
+
+.sidebarOpenButton {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: inherit;
+    color: #DDDDDD;
+    text-align: center;
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #444444;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+    transition-duration: 0.4s;
+}
+
+.sidebar:hover {
+    cursor: default;
+}
+
+.sidebarItem {
+    padding: 8px 16px;
+    float: left;
+    width: 75%;
+    background-color: inherit;
+    border: none;
+    color: #DDDDDD;
+    font-family: "Georgia", Times, Serif;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    outline: 0;
+    cursor: default;
+}
+
+.sidebarClose {
+    width: 100%;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-color: #000000;
+}
+
+.sidebarButton:hover {
+    background-color: #333333;
+    border: none;
+    color: #DDDDDD;
+}
+
+.sidebarDropdownBtn {
+    width: 100%;
+    background-color: inherit;
+    color: #DDDDDD;
+    font-family: "Georgia", Times, Serif;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.sidebarDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.sidebarDropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #444444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.sidebarDropdownContent a {
+    color: #DDDDDD;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333333;
+}
+
+.sidebarDropdown:hover .sidebarDropdownContent{
+    display: block;
+}
+
+.sidebarDropdown:hover .sidebarDropdownBtn {
+    background-color: lightcoral;
+}
+
+.currentProject {
+    position: absolute;
+}
