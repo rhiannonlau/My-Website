@@ -12,8 +12,8 @@
 </head>
 <body>
     <!-- Sidebar -->
-    <div id="mySidebar" class="sidebar sidebarFromLeft" style="display:none">
-        <button onclick="close_sidebar(); show_sidebar_button()" class="sidebarItem sidebarCloseBtn large">Close &times;</button>
+    <div id="mySidebar" class="sidebar" style="display: none;">
+        <button onclick="animate_sidebar()" class="sidebarItem sidebarCloseBtn large">Close &times;</button>
         <a href='resumePage.php' class="sidebarItem sidebarBtn">Resume</a>
         <div id="drop" class="sidebarDropdown">
             <button class="sidebarDropdownBtn" href="projectsPage.php">Projects <span>&#x25BC;</span></button>
@@ -27,7 +27,10 @@
 
     <!-- Page -->
     <div>
-        <button id="sidebarOpen" onclick="open_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
+        <button id="sidebarOpenBtn" onclick="animate_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
+        <a target="_blank" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 16px">
+            <img src="github_logo_transparent.png" alt="Link to my Github" style="width: 100px; -webkit-filter: invert(100%); filter: invert(100%) brightness(85%);">
+        </a>
         <h1 class="white">Rhiannon Lau</h1>
     </div>
 
