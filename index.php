@@ -29,16 +29,51 @@
     <div>
         <button id="sidebarOpenBtn" onclick="animate_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
         <a target="_blank" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 16px">
-            <img src="github_logo_transparent.png" alt="Link to my Github" style="width: 100px; -webkit-filter: invert(100%); filter: invert(100%) brightness(85%);">
+            <img src="res/github_logo_transparent.png" alt="Link to my Github"
+                style="
+                padding: 5px;
+                width: 100px;
+                -webkit-filter: invert(100%);
+                filter: invert(100%) brightness(85%);">
         </a>
-        <h1 class="white">Rhiannon Lau</h1>
     </div>
 
-    <div>
-        <h2 class="white">Current project</h2>
-        <div>
-
+    
+    <h1 class="white">Current project</h1>
+    <div style="padding: 0 20% 0 20%">
+        <div class="currProjCard">
+            <img src="res/cat.png" alt="" style="width: 100%" class="center">
+            <div class="currProjCardText">
+                <h3 class="white"><b>Project 1</b></h4>
+                <!--<p class="white">Commission</p>-->
+            </div>
         </div>
+        <div class="projGallery">
+            <div class="projCard">
+                <img src="res/cat.png" alt="" style="width: 100%">
+                <div class="currProjCardText">
+                    <h3 class="white text"><b>Project 2</b></h4>
+                    <!--<p class="white">Commission</p>-->
+                </div>
+            </div>
+
+            <div class="projCard">
+                <img src="res/cat.png" alt="" style="width: 100%">
+                <div class="currProjCardText">
+                    <h3 class="white text"><b>Project 3</b></h4>
+                    <!--<p class="white">Commission</p>-->
+                </div>
+            </div>
+
+            <div class="projCard">
+                <img src="res/cat.png" alt="" style="width: 100%">
+                <div class="currProjCardText">
+                    <h3 class="white text"><b>Project 4</b></h4>
+                    <!--<p class="white">Commission</p>-->
+                </div>
+            </div>
+        </div>
+        <div style="clear: both"></div> <!-- ensures the surrounding div adheres to the images' borders -->
     </div>
 </body>
 </html>
