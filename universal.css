@@ -8,6 +8,10 @@ body {
 }
 
 /* general functions for aesthetic and consistency */
+.small {
+    font-size: 14px!important;
+}
+
 .large {
     font-size: 18px!important;
 }
@@ -19,7 +23,6 @@ body {
 .white {
     color: #DDDDDD;
     padding: 0px 50px;
-    text-align: left;
 }
 
 .yellow {

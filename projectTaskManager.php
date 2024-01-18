@@ -23,7 +23,7 @@
             <div id="projectsDrop" class="sidebarDropdownContent">
                 <a href="projectsPage.php" class="sidebarItem sidebarBtn">All Projects</a>
                 <a href="#" class="sidebarItem sidebarBtn">Project 1</a>
-                <a href="projectTaskManager.php" class="sidebarItem sidebarBtn">Task Manager</a>
+                <a href="#" class="sidebarItem sidebarBtn">Project 2</a>
             </div>
         </div>
         <a href='aboutMePage.php' class="sidebarItem sidebarBtn">About Me</a>
@@ -32,7 +32,7 @@
     <!-- Page -->
     <div style="display: inline-flex">
         <button id="sidebarOpenBtn" onclick="animate_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
-        <p style="color: #DDDDDD; padding-left: 10px;"><b><a style="color: #DDDDDD" href="projectsPage.php">Projects</a></b></p>
+        <p style="color: #DDDDDD; padding-left: 10px;"><a style="color: #DDDDDD" href="projectsPage.php">Projects</a> &#9656 <b><a style="color: #DDDDDD" href="projectTaskManager.php">Task Manager</a></b></p>
         <a target="_blank" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab -->
             <img src="res/github_logo_transparent.png" alt="Link to my Github"
                 style="
@@ -49,8 +49,14 @@
         </a>
     </div>
 
-    <h1 class="white">Projects</h1>
-
-    <!-- all projects, maybe displayed using cards. user has option to search for key words or filter in a certain order-->
+    <h1 class="white">Project: Task Manager</h1>
+    <h2 class="white">Course: CISC 327 - Quality Assurance</h2>
+    <p class="white large">Github repository link: <a target="_blank" href="https://github.com/rhiannonlau/CISC327_A2" class="yellow">github.com/rhiannonlau/CISC327_A2</a></p>
+    <p class="white large">Technical details:</p>
+    <ul class="white large" style="list-style-type:disc; padding-left: 100px;">
+        <li>Group members: Two other Queen's students</li>
+        <li>Languages: php, css, javascript</li>
+        <li>Software: XAMPP, Selenium</li>
+    </ul>
 </body>
 </html>
