@@ -7,10 +7,11 @@
     <title>My Website</title>
 
     <!-- Link to CSS and JS: -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="projectsPage.css">
     <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="universal.css">
     <script src="applications.js"></script>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Sidebar -->
@@ -29,27 +30,49 @@
         <a href='aboutMePage.php' class="sidebarItem sidebarBtn">About Me</a>
     </div>
 
-    <!-- Page -->
+    <!-- Header content -->
     <div style="display: inline-flex">
         <button id="sidebarOpenBtn" onclick="animate_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
         <p style="color: #DDDDDD; padding-left: 10px;"><b><a style="color: #DDDDDD" href="projectsPage.php">Projects</a></b></p>
         <a target="_blank" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab -->
             <img src="res/github_logo_transparent.png" alt="Link to my Github"
-                style="
-                padding: 5px;
-                width: 100px;
-                -webkit-filter: invert(100%);
-                filter: invert(100%) brightness(85%);">
+            style="
+            width: 100px;
+            padding: 5px;
+            -webkit-filter: invert(100%);
+            filter: invert(100%) brightness(85%);">
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/rhiannon-lau-410362273/" style="position:absolute; padding-top: 20px; right: 16px">
-            <img src="res/linkedin_logo_transparent.webp" alt="Link to my LinkedIn"
-                style="
-                width: 100px;
-                filter: brightness(85%);">
+        <a target="_blank" href="https://www.linkedin.com/in/rhiannon-lau-410362273/" style="position:absolute; padding-top: 8px; right: 16px">
+            <img src="res/linkedin_logo_transparent.webp" alt="Link to my LinkedIn" class="linkedInBtn"
+            style="
+            width: 100px;
+            filter: brightness(85%);">
         </a>
     </div>
 
-    <h1 class="white">Projects</h1>
+    <div></div>
+
+    <!-- Page -->
+    <div style="
+        width: 97%;
+        display: inline-flex;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: space-between;">
+        <h1 class="white">Projects</h1>
+        <div class="searchbar">
+            <input placeholder="Search..." id="searchBar" name="searchBar" type="text" style="font-size: 18px;">
+            <i class="fa-solid fa-magnifying-glass glass"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="data">
+            <div class="body">
+                <div id="root" style="margin-left: 35px"></div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
 
     <!-- all projects, maybe displayed using cards. user has option to search for key words or filter in a certain order-->
 </body>

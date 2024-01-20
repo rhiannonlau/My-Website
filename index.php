@@ -52,7 +52,7 @@
     <h2 class="white">Current project</h2>
     <div style="padding: 0 20% 0 20%">
         <div class="currProjCard">
-            <img src="res/cat.png" alt="" style="width: 100%" class="center">
+            <img src="res/cat.png" alt="" style="width: 90%" class="center">
             <div class="currProjCardText">
                 <h3 class="white"><b>Project 1</b></h4>
                 <!--<p class="white">Commission</p>-->
