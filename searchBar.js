@@ -1,15 +1,21 @@
+function open(projLink) {
+    window.location.href = projLink;
+}
+
 const project=[
     {
         id: 0,
         image: 'res/cat.png',
         title: 'Task Manager Website',
-        description: 'Skills: HTML, PHP, JavaScript, CSS, Selenium'
+        description: 'Skills: HTML, PHP, JavaScript, CSS, Selenium',
+        link: "projectTaskManager.php"
     },
     {
         id: 1,
         image: 'res/cat.png',
         title: 'Project 2',
-        description: 'N/A'
+        description: 'N/A',
+        link: "#"
     }
 ]
 
@@ -27,20 +33,22 @@ document.getElementById('searchBar').addEventListener('keyup', (e)=>{
 
 const displayItem = (items)=> {
     document.getElementById('root').innerHTML=items.map((item)=>{
-        var {image, title, description} = item;
+        var {image, title, description, link} = item;
         return (
             `<div class='box'>
                 <div class='img-box'>
                     <img class='images' src=${image}></img>
                 </div>
-                <div class='bottom'>
+                <div class='bottom' style="width: 90%">
                     <p class="large" style="text-align: center; color: #DDDDDD;">${title}</p>
                     <p style="text-align: center; font-size: 14px; color: #DDDDDD;">${description}</p>
-                    <button class="button">View this project</button>
+                    <p><a class="button center" style="width: 50%" href=${link}>View this project</a></p>
                 </div>
             </div>`
         )
     }).join('')
 };
+
+/*<button class="button">View this project</button><input type="button" value="View this project" onclick=${link}>*/
 
 displayItem(categories);

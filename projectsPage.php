@@ -31,26 +31,24 @@
     </div>
 
     <!-- Header content -->
-    <div style="display: inline-flex">
+    <div style="display: inline-flex;"> <!-- border: 3px solid #73AD21;-->
         <button id="sidebarOpenBtn" onclick="animate_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
         <p style="color: #DDDDDD; padding-left: 10px;"><b><a style="color: #DDDDDD" href="projectsPage.php">Projects</a></b></p>
-        <a target="_blank" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab -->
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab -->
             <img src="res/github_logo_transparent.png" alt="Link to my Github"
-            style="
-            width: 100px;
-            padding: 5px;
-            -webkit-filter: invert(100%);
-            filter: invert(100%) brightness(85%);">
+                style="
+                padding: 5px;
+                width: 100px;
+                -webkit-filter: invert(100%);
+                filter: invert(100%) brightness(85%);">
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/rhiannon-lau-410362273/" style="position:absolute; padding-top: 8px; right: 16px">
-            <img src="res/linkedin_logo_transparent.webp" alt="Link to my LinkedIn" class="linkedInBtn"
-            style="
-            width: 100px;
-            filter: brightness(85%);">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rhiannon-lau-410362273/" style="position:absolute; padding-top: 20px; right: 16px">
+            <img src="res/linkedin_logo_transparent.webp" alt="Link to my LinkedIn"
+                style="
+                width: 100px;
+                filter: brightness(85%);">
         </a>
     </div>
-
-    <div></div>
 
     <!-- Page -->
     <div style="

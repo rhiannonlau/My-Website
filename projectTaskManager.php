@@ -30,10 +30,10 @@
     </div>
 
     <!-- Page -->
-    <div style="display: inline-flex">
+    <div style="display: inline-flex;">
         <button id="sidebarOpenBtn" onclick="animate_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
         <p style="color: #DDDDDD; padding-left: 10px;"><a style="color: #DDDDDD" href="projectsPage.php">Projects</a> &#9656 <b><a style="color: #DDDDDD" href="projectTaskManager.php">Task Manager</a></b></p>
-        <a target="_blank" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab -->
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab -->
             <img src="res/github_logo_transparent.png" alt="Link to my Github"
                 style="
                 padding: 5px;
@@ -41,7 +41,7 @@
                 -webkit-filter: invert(100%);
                 filter: invert(100%) brightness(85%);">
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/rhiannon-lau-410362273/" style="position:absolute; padding-top: 20px; right: 16px">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rhiannon-lau-410362273/" style="position:absolute; padding-top: 20px; right: 16px">
             <img src="res/linkedin_logo_transparent.webp" alt="Link to my LinkedIn"
                 style="
                 width: 100px;
@@ -51,7 +51,7 @@
 
     <h1 class="white">Project: Task Manager</h1>
     <h2 class="white">Course: CISC 327 - Quality Assurance</h2>
-    <p class="white large">Github repository link: <a target="_blank" href="https://github.com/rhiannonlau/CISC327_A2" class="yellow">github.com/rhiannonlau/CISC327_A2</a></p>
+    <p class="white large">Github repository link: <a target="_blank" rel="noopener noreferrer" href="https://github.com/rhiannonlau/CISC327_A2" class="yellow">github.com/rhiannonlau/CISC327_A2</a></p>
     <p class="white large">Technical details:</p>
     <ul class="white large" style="list-style-type:disc; padding-left: 100px;">
         <li>Group members: Two other Queen's students</li>

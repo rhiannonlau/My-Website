@@ -43,6 +43,9 @@
     position: fixed!important; /*this allows it to slide over the content instead of moving it*/
     z-index: 1; /*similar to layers, higher z-index is on top*/
     overflow: auto;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 #111111;
 }
 
 .sidebarItem {
@@ -77,7 +80,7 @@
 
 /* sidebar dropdown design */
 .sidebarDropdownBtn {
-    height: 25px;
+    height: 35px;
     width: 180px;
     background-color: inherit;
     padding: 4px 16px;

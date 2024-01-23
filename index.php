@@ -19,7 +19,7 @@
         <a href='index.php' class="sidebarItem sidebarBtn">Home</a>
         <a href='resumePage.php' class="sidebarItem sidebarBtn">Resume</a>
         <div id="drop" class="sidebarDropdown">
-            <button class="sidebarDropdownBtn" href="projectsPage.php">Projects <span>&#x25BC;</span></button>
+            <button class="sidebarDropdownBtn" style="height: 35px" href="projectsPage.php">Projects <span>&#x25BC;</span></button> <!-- the height specifier is necessary here instead of css-->
             <div id="projectsDrop" class="sidebarDropdownContent">
                 <a href="projectsPage.php" class="sidebarItem sidebarBtn">All Projects</a>
                 <a href="#" class="sidebarItem sidebarBtn">Project 1</a>
@@ -32,7 +32,7 @@
     <!-- Page -->
     <div>
         <button id="sidebarOpenBtn" onclick="animate_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
-        <a target="_blank" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab -->
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab, rel=... is for security, prevents phishing -->
             <img src="res/github_logo_transparent.png" alt="Link to my Github"
                 style="
                 padding: 5px;
@@ -40,7 +40,7 @@
                 -webkit-filter: invert(100%);
                 filter: invert(100%) brightness(85%);">
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/rhiannon-lau-410362273/" style="position:absolute; padding-top: 20px; right: 16px">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rhiannon-lau-410362273/" style="position:absolute; padding-top: 20px; right: 16px">
             <img src="res/linkedin_logo_transparent.webp" alt="Link to my LinkedIn"
                 style="
                 width: 100px;
