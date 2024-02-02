@@ -7,9 +7,10 @@
     <title>My Website</title>
 
     <!-- Link to CSS and JS: -->
-    <link rel="stylesheet" href="projectsPage.css">
+    
     <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="universal.css">
+    <link rel="stylesheet" href="projectsPage.css">
     <script src="applications.js"></script>
     <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
 </head>
@@ -58,9 +59,21 @@
         align-items: center;
         justify-content: space-between;">
         <h1 class="white">Projects</h1>
-        <div class="searchbar">
-            <input placeholder="Search..." id="searchBar" name="searchBar" type="text" style="font-size: 18px;">
-            <i class="fa-solid fa-magnifying-glass glass"></i>
+        <div>
+            <div class="searchbarContainer" style="margin-right: 10px; display: inline-flex">
+                <input placeholder="Search..." id="searchBar" name="searchBar" type="text" style="font-size: 18px;">
+                <i class="fa-solid fa-magnifying-glass glass"></i>
+            </div>
+            <div id="drop" class="sidebarDropdown" style="margin-left: 10px;">
+                <button class="sidebarDropdownBtn" style="height: 35px; width: 150px">Display by <span>&#x25BC;</span></button> <!-- the height specifier is necessary here instead of css-->
+                <div id="projectsDrop" class="sidebarDropdownContent">
+                    <button id="dispAlph" class="sidebarItem sidebarBtn" style="width: 150px">Alphabetical</button>
+                    <button id="dispRevAlph" class="sidebarItem sidebarBtn" style="width: 150px">Reverse alphabetical</button>
+                    <button id="dispMRec" class="sidebarItem sidebarBtn" style="width: 150px">Most recent</button>
+                    <button id="dispLRec" class="sidebarItem sidebarBtn" style="width: 150px">Least recent</button>
+                    <!-- try to make most recent the default -->
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">

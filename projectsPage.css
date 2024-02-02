@@ -21,8 +21,9 @@ body {
     overflow-y: auto;
 }
 
-.searchbar {
+.searchbarContainer {
     width: 250px;
+    height: 25px;
     background-color: #DDDDDD;
     border-radius: 3px;
     padding: 9px;
@@ -49,6 +50,7 @@ input{
 }
 
 .box {
+    height: 375px;
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -80,8 +82,7 @@ input{
     object-position: center;
 }
 
-.button {
-    position: relative;
+.viewButton {
     background-color: #444444;
     border: none;
     border-radius: 5px;
@@ -95,7 +96,7 @@ input{
     cursor: pointer;
 }
 
-.button:hover{
+.viewButton:hover{
     background-color: palegoldenrod;
     color: #111111;
 }
@@ -104,14 +105,14 @@ input{
     display: none;
 }
 
-.center {
+/*.centerButton {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
+}*/
 
 .bottom{
     margin-top: 20px;
@@ -122,4 +123,5 @@ input{
     align-items: center;
     justify-content: space-between;
     height: 110px;
+    overflow: visible;
 }
