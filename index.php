@@ -30,7 +30,7 @@
         <a href='aboutMePage.php' class="sidebarItem sidebarBtn">About Me</a>
     </div>
 
-    <!-- Page -->
+    <!-- Header -->
     <div>
         <button id="sidebarOpenBtn" onclick="animate_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab, rel=... is for security, prevents phishing -->
@@ -49,14 +49,24 @@
         </a>
     </div>
 
-    <h1 class="white">Home</h1>
+    <!-- Page -->
+    <div style="
+        width: 97%;
+        display: inline-flex;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: space-between;">
+        <h1 class="white">Home</h1>
+        <a class="white viewButton" href="projectsPage.php">View All</a>
+    </div>
+    <!--
     <h2 class="white">Current project</h2>
     <div style="padding: 0 20% 0 20%">
         <div class="currProjCard">
             <img src="res/cat.png" alt="" style="width: 90%" class="center">
             <div class="currProjCardText">
                 <h3 class="white"><b>Project 1</b></h4>
-                <!--<p class="white">Commission</p>-->
+                <--<p class="white">Commission</p>->
             </div>
         </div>
         <div class="projGallery">
@@ -64,7 +74,7 @@
                 <img src="res/cat.png" alt="" style="width: 100%">
                 <div class="currProjCardText">
                     <h3 class="white text"><b>Project 2</b></h4>
-                    <!--<p class="white">Commission</p>-->
+                    <--<p class="white">Commission</p>->
                 </div>
             </div>
 
@@ -72,7 +82,7 @@
                 <img src="res/cat.png" alt="" style="width: 100%">
                 <div class="currProjCardText">
                     <h3 class="white text"><b>Project 3</b></h4>
-                    <!--<p class="white">Commission</p>-->
+                    <--<p class="white">Commission</p>->
                 </div>
             </div>
 
@@ -80,19 +90,22 @@
                 <img src="res/cat.png" alt="" style="width: 100%">
                 <div class="currProjCardText">
                     <h3 class="white text"><b>Project 4</b></h4>
-                    <!--<p class="white">Commission</p>-->
+                    <--<p class="white">Commission</p>->
                 </div>
             </div>
         </div>
-        <div style="clear: both"></div> <!-- ensures the surrounding div adheres to the images' borders -->
+        <div style="clear: both"></div> <-- ensures the surrounding div adheres to the images' borders ->
     </div>
-    <div class="container">
-        <div class="data">
-            <div class="body">
+    -->
+    <div class="container" style="border: 3px solid green;">
+        <div class="data" style="border: 3px solid green; width: 98%">
+            <div class="body" style="margin: auto; width: 50%; border: 3px solid green; padding: 10px">
+                <h1 class='white'>Current project</h1>
                 <div id="root" style="margin-left: 35px"></div>
             </div>
         </div>
     </div>
     <script src="searchBar.js"></script>
+    <!-- could add filtering again for this page -->
 </body>
 </html>

@@ -32,7 +32,7 @@
     </div>
 
     <!-- Header content -->
-    <div style="display: inline-flex;"> <!-- border: 3px solid #73AD21;-->
+    <div style="display: inline-flex;">
         <button id="sidebarOpenBtn" onclick="animate_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
         <p style="color: #DDDDDD; padding-left: 10px;"><b><a style="color: #DDDDDD" href="projectsPage.php">Projects</a></b></p>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab -->
@@ -69,22 +69,21 @@
                 <div id="projectsDrop" class="sidebarDropdownContent">
                     <button id="dispAlph" class="sidebarItem sidebarBtn" style="width: 150px">Alphabetical</button>
                     <button id="dispRevAlph" class="sidebarItem sidebarBtn" style="width: 150px">Reverse alphabetical</button>
-                    <button id="dispMRec" class="sidebarItem sidebarBtn" style="width: 150px">Most recent</button>
+                    <button id="dispMRec" class="sidebarItem sidebarBtn" style="width: 150px">Most recent <span style="color: #666666">&#8226; default</span></button>
                     <button id="dispLRec" class="sidebarItem sidebarBtn" style="width: 150px">Least recent</button>
-                    <!-- try to make most recent the default -->
+                    <button id="dispFin" class="sidebarItem sidebarBtn" style="width: 150px">Status: Finished first</button>
+                    <button id="dispProg" class="sidebarItem sidebarBtn" style="width: 150px">Status: In Progress first</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="data">
+        <div class="data" style="overflow: visible">
             <div class="body">
                 <div id="root" style="margin-left: 35px"></div>
             </div>
         </div>
     </div>
     <script src="searchBar.js"></script>
-
-    <!-- all projects, maybe displayed using cards. user has option to search for key words or filter in a certain order-->
 </body>
 </html>

@@ -9,6 +9,7 @@ const project=[
         id: 0,
         image: 'res/cat.png',
         title: 'Task Manager Website',
+        status: 'Finished',
         skills: 'HTML, PHP, JavaScript, CSS, Selenium',
         description: '',
         link: "projectTaskManager.php"
@@ -17,9 +18,37 @@ const project=[
         id: 1,
         image: 'res/cat.png',
         title: 'Project 2',
+        status: 'In Progress',
         skills: 'N/A',
         description: '',
-        link: "#"
+        link: "projectTaskManager.php"
+    },
+    {
+        id: 2,
+        image: 'res/cat.png',
+        title: 'Project 3',
+        status: 'In Progress',
+        skills: 'N/A',
+        description: '',
+        link: "projectTaskManager.php"
+    },
+    {
+        id: 3,
+        image: 'res/cat.png',
+        title: 'Project 4',
+        status: 'In Progress',
+        skills: 'N/A',
+        description: '',
+        link: "projectTaskManager.php"
+    },
+    {
+        id: 4,
+        image: 'res/cat.png',
+        title: 'Project 5',
+        status: 'In Progress',
+        skills: 'N/A',
+        description: '',
+        link: "projectTaskManager.php"
     }
 ]
 
@@ -65,29 +94,72 @@ function sortLeastRecent(array) {
     })
 }
 
+function sortFinished(array) {
+    return array.slice().sort((a, b) => {
+        if (a.status == "Finished" && b.status == "In Progress") {
+            return -1;
+        }
+
+        else if (a.status == "In Progress" && b.status == "Finished") {
+            return 1;
+        }
+    })
+}
+
+function sortInProgress(array) {
+    return array.slice().sort((a, b) => {
+        if (a.status == "In Progress" && b.status == "Finished") {
+            return -1;
+        }
+
+        else if (a.status == "Finished" && b.status == "In Progress") {
+            return 1;
+        }
+    })
+}
+
 
 if (pathname.includes("index.php")) {
     // mimic index.php formatting so that it displays the last 4 in categories
     // with the last one being the big card
+    const categories = [...new Set(project.map((item)=> {return item}))]
+
+    const lastItem = sortMostRecent(categories).slice(0);
+    const lastFourItems = sortMostRecent(categories).slice(0, 4);
+
     const displayItem = (items)=> {
         document.getElementById('root').innerHTML=items.map((item)=>{
-            var {image, title, description, link} = item;
-            return ( // maybe can do "if" here? "if id = last, display big, else display small"?
-                `<div class='box'>
-                    <h1 class='white'>Current project</h1>
-                    <div class='img-box'>
-                        <img class='images' src=${image}></img>
-                    </div>
-                    <div class='bottom' style='width: 90%' href='${link}'>
-                        <p class='large' style='text-align: center; color: #DDDDDD;'>${title}</p>
-                        <p style='text-align: center; font-size: 14px; color: #DDDDDD;'>${description}</p>
-                    </div>
-                </div>`
-            )
+            var {id, image, title, description, link} = item;
+            if (id == 4) { // change to a variable later
+                return (
+                    `<a class='box' style='width: 150%' href='${link}'>
+                        <div class='img-box'>
+                            <img class='images' src=${image}></img>
+                        </div>
+                        <div class='bottom' style='width: 90%'>
+                            <p class='large' style='text-align: center; color: #DDDDDD;'>${title}</p>
+                            <p style='text-align: center; font-size: 14px; color: #DDDDDD;'>${description}</p>
+                        </div>
+                    </a>`
+                )
+            }
+            else {
+                return (
+                    `<a class='box' href='${link}'>
+                        <div class='img-box'>
+                            <img class='images' src=${image}></img>
+                        </div>
+                        <div class='bottom' style='width: 90%'>
+                            <p class='large' style='text-align: center; color: #DDDDDD;'>${title}</p>
+                            <p style='text-align: center; font-size: 14px; color: #DDDDDD;'>${description}</p>
+                        </div>
+                    </a>`
+                )
+            }
         }).join('')
     };
 
-    displayItem(categories);
+    displayItem(lastFourItems);
 }
 
 else if (pathname.includes("projectsPage.php")) {
@@ -123,17 +195,28 @@ else if (pathname.includes("projectsPage.php")) {
         displayItem(dispData)
     });
 
+    document.getElementById('dispFin').addEventListener('click', () => {
+        const dispData = sortFinished(categories);
+        displayItem(dispData)
+    });
+
+    document.getElementById('dispProg').addEventListener('click', () => {
+        const dispData = sortInProgress(categories);
+        displayItem(dispData)
+    });
+
     const displayItem = (items)=> {
         document.getElementById('root').innerHTML=items.map((item)=>{
-            var {image, title, skills, link} = item;
+            var {image, title, status, skills, link} = item;
             return (
                 `<div class='box'>
                     <div class='img-box'>
                         <img class='images' src=${image}></img>
                     </div>
                     <div class='bottom' style='width: 90%'>
-                        <p class='large' style='text-align: center; color: #DDDDDD;'>${title}</p>
-                        <p style='text-align: center; font-size: 14px; color: #DDDDDD;'>Skills: ${skills}</p>
+                        <p class='large' style='text-align: center; color: #DDDDDD; margin-bottom: 0'>${title}</p>
+                        <p style='text-align: center; font-size: 14px; color: #666666; margin-bottom: 0; padding-top: 5px'>Status: ${status}</p>
+                        <p style='text-align: center; font-size: 14px; color: #DDDDDD; padding-top: 0; margin-top: 5px;'>Skills: ${skills}</p>
                         <a class='viewButton' style='width: 50%' href='${link}'>View this project</a>
                     </div>
                 </div>`
