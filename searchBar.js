@@ -9,14 +9,16 @@ const project=[
         id: 0,
         image: 'res/cat.png',
         title: 'Task Manager Website',
-        description: 'Skills: HTML, PHP, JavaScript, CSS, Selenium',
+        skills: 'HTML, PHP, JavaScript, CSS, Selenium',
+        description: '',
         link: "projectTaskManager.php"
     },
     {
         id: 1,
         image: 'res/cat.png',
         title: 'Project 2',
-        description: 'N/A',
+        skills: 'N/A',
+        description: '',
         link: "#"
     }
 ]
@@ -65,7 +67,27 @@ function sortLeastRecent(array) {
 
 
 if (pathname.includes("index.php")) {
+    // mimic index.php formatting so that it displays the last 4 in categories
+    // with the last one being the big card
+    const displayItem = (items)=> {
+        document.getElementById('root').innerHTML=items.map((item)=>{
+            var {image, title, description, link} = item;
+            return ( // maybe can do "if" here? "if id = last, display big, else display small"?
+                `<div class='box'>
+                    <h1 class='white'>Current project</h1>
+                    <div class='img-box'>
+                        <img class='images' src=${image}></img>
+                    </div>
+                    <div class='bottom' style='width: 90%' href='${link}'>
+                        <p class='large' style='text-align: center; color: #DDDDDD;'>${title}</p>
+                        <p style='text-align: center; font-size: 14px; color: #DDDDDD;'>${description}</p>
+                    </div>
+                </div>`
+            )
+        }).join('')
+    };
 
+    displayItem(categories);
 }
 
 else if (pathname.includes("projectsPage.php")) {
@@ -75,7 +97,7 @@ else if (pathname.includes("projectsPage.php")) {
         const searchData = e.target.value.toLowerCase();
         const filterData = categories.filter((item)=> {
             return(
-                item.title.toLocaleLowerCase().includes(searchData) || item.description.toLocaleLowerCase().includes(searchData)
+                item.title.toLocaleLowerCase().includes(searchData) || item.skills.toLocaleLowerCase().includes(searchData)
             )
         })
         displayItem(filterData)
@@ -103,7 +125,7 @@ else if (pathname.includes("projectsPage.php")) {
 
     const displayItem = (items)=> {
         document.getElementById('root').innerHTML=items.map((item)=>{
-            var {image, title, description, link} = item;
+            var {image, title, skills, link} = item;
             return (
                 `<div class='box'>
                     <div class='img-box'>
@@ -111,7 +133,7 @@ else if (pathname.includes("projectsPage.php")) {
                     </div>
                     <div class='bottom' style='width: 90%'>
                         <p class='large' style='text-align: center; color: #DDDDDD;'>${title}</p>
-                        <p style='text-align: center; font-size: 14px; color: #DDDDDD;'>${description}</p>
+                        <p style='text-align: center; font-size: 14px; color: #DDDDDD;'>Skills: ${skills}</p>
                         <a class='viewButton' style='width: 50%' href='${link}'>View this project</a>
                     </div>
                 </div>`
@@ -119,5 +141,6 @@ else if (pathname.includes("projectsPage.php")) {
         }).join('')
     };
 
-    displayItem(categories);
+    const def = sortMostRecent(categories);
+    displayItem(def);
 }

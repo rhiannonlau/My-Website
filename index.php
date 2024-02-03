@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="universal.css">
+    <link rel="stylesheet" href="projectsPage.css">
     <script src="applications.js"></script>
 </head>
 <body>
@@ -85,5 +86,13 @@
         </div>
         <div style="clear: both"></div> <!-- ensures the surrounding div adheres to the images' borders -->
     </div>
+    <div class="container">
+        <div class="data">
+            <div class="body">
+                <div id="root" style="margin-left: 35px"></div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
 </body>
 </html>
