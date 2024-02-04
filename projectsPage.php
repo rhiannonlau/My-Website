@@ -67,10 +67,10 @@
             <div id="drop" class="sidebarDropdown" style="margin-left: 10px;">
                 <button class="sidebarDropdownBtn" style="height: 35px; width: 150px">Display by <span>&#x25BC;</span></button> <!-- the height specifier is necessary here instead of css-->
                 <div id="projectsDrop" class="sidebarDropdownContent">
-                    <button id="dispAlph" class="sidebarItem sidebarBtn" style="width: 150px">Alphabetical</button>
-                    <button id="dispRevAlph" class="sidebarItem sidebarBtn" style="width: 150px">Reverse alphabetical</button>
                     <button id="dispMRec" class="sidebarItem sidebarBtn" style="width: 150px">Most recent <span style="color: #666666">&#8226; default</span></button>
                     <button id="dispLRec" class="sidebarItem sidebarBtn" style="width: 150px">Least recent</button>
+                    <button id="dispAlph" class="sidebarItem sidebarBtn" style="width: 150px">Alphabetical</button>
+                    <button id="dispRevAlph" class="sidebarItem sidebarBtn" style="width: 150px">Reverse alphabetical</button>
                     <button id="dispFin" class="sidebarItem sidebarBtn" style="width: 150px">Status: Finished first</button>
                     <button id="dispProg" class="sidebarItem sidebarBtn" style="width: 150px">Status: In Progress first</button>
                 </div>
@@ -84,6 +84,6 @@
             </div>
         </div>
     </div>
-    <script src="searchBar.js"></script>
+    <script src="projects.js"></script>
 </body>
 </html>

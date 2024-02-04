@@ -99,13 +99,13 @@
     -->
     <div class="container" style="border: 3px solid green;">
         <div class="data" style="border: 3px solid green; width: 98%">
-            <div class="body" style="margin: auto; width: 50%; border: 3px solid green; padding: 10px">
+            <div class="body" style="margin: auto; width: 70%; border: 3px solid green; padding: 10px;">
                 <h1 class='white'>Current project</h1>
-                <div id="root" style="margin-left: 35px"></div>
+                <div id="root" style="margin-left: 35px;"></div>
             </div>
         </div>
     </div>
-    <script src="searchBar.js"></script>
+    <script src="projects.js"></script>
     <!-- could add filtering again for this page -->
 </body>
 </html>

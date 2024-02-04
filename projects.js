@@ -11,7 +11,7 @@ const project=[
         title: 'Task Manager Website',
         status: 'Finished',
         skills: 'HTML, PHP, JavaScript, CSS, Selenium',
-        description: '',
+        description: 'LSDKHFLSKDHJ :SDLJF:SLDKF LSKDHFLSKDJF LSDKFHLSKDJFLSDHF SLKDFHSKDJFHSKDJGFH',
         link: "projectTaskManager.php"
     },
     {
@@ -20,7 +20,7 @@ const project=[
         title: 'Project 2',
         status: 'In Progress',
         skills: 'N/A',
-        description: '',
+        description: 'LSDKHFLSKDHJ :SDLJF:SLDKF LSKDHFLSKDJF LSDKFHLSKDJFLSDHF SLKDFHSKDJFHSKDJGFH',
         link: "projectTaskManager.php"
     },
     {
@@ -29,7 +29,7 @@ const project=[
         title: 'Project 3',
         status: 'In Progress',
         skills: 'N/A',
-        description: '',
+        description: 'LSDKHFLSKDHJ :SDLJF:SLDKF LSKDHFLSKDJF LSDKFHLSKDJFLSDHF SLKDFHSKDJFHSKDJGFH',
         link: "projectTaskManager.php"
     },
     {
@@ -38,7 +38,7 @@ const project=[
         title: 'Project 4',
         status: 'In Progress',
         skills: 'N/A',
-        description: '',
+        description: 'LSDKHFLSKDHJ :SDLJF:SLDKF LSKDHFLSKDJF LSDKFHLSKDJFLSDHF SLKDFHSKDJFHSKDJGFH',
         link: "projectTaskManager.php"
     },
     {
@@ -47,7 +47,7 @@ const project=[
         title: 'Project 5',
         status: 'In Progress',
         skills: 'N/A',
-        description: '',
+        description: 'LSDKHFLSKDHJ :SDLJF:SLDKF LSKDHFLSKDJF LSDKFHLSKDJFLSDHF SLKDFHSKDJFHSKDJGFH',
         link: "projectTaskManager.php"
     }
 ]
@@ -132,8 +132,8 @@ if (pathname.includes("index.php")) {
             var {id, image, title, description, link} = item;
             if (id == 4) { // change to a variable later
                 return (
-                    `<a class='box' style='width: 150%' href='${link}'>
-                        <div class='img-box'>
+                    `<a class='box' style='width: 150%; height: 75%' href='${link}'>
+                        <div class='img-box' style='height: 75%'>
                             <img class='images' src=${image}></img>
                         </div>
                         <div class='bottom' style='width: 90%'>
@@ -145,15 +145,16 @@ if (pathname.includes("index.php")) {
             }
             else {
                 return (
-                    `<a class='box' href='${link}'>
-                        <div class='img-box'>
+                    //`<div style='float: left; width: 350px; display: block;'>
+                    `<a class='box' href='${link}' style='height: 33%; width: 100%; float: left; display: flex; flex-direction: column; overflow: hidden'>
+                        <div class='img-box' style='display: block'>
                             <img class='images' src=${image}></img>
                         </div>
-                        <div class='bottom' style='width: 90%'>
-                            <p class='large' style='text-align: center; color: #DDDDDD;'>${title}</p>
-                            <p style='text-align: center; font-size: 14px; color: #DDDDDD;'>${description}</p>
+                        <div style='width: 90%; display: block'>
+                            <p style='color: #DDDDDD; text-align: left;'><span class='large'>${title}</span></br><span style='text-align: center; font-size: 12px;'>${description}</span></p>
                         </div>
                     </a>`
+                    //</div>`
                 )
             }
         }).join('')

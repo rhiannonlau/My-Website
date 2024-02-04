@@ -55,3 +55,7 @@
     font-size: 12px;
     text-align: left;
 }
+
+.projContainer > div {
+    float: left;
+}
