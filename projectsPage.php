@@ -51,7 +51,7 @@
         </a>
     </div>
 
-    <!-- Page -->
+    <!-- Page - Searchbar -->
     <div style="
         width: 97%;
         display: inline-flex;
@@ -77,6 +77,7 @@
             </div>
         </div>
     </div>
+    <!-- Page - Projects -->
     <div class="container">
         <div class="data" style="overflow: visible">
             <div class="body">

@@ -17,11 +17,11 @@ const project=[
     {
         id: 1,
         image: 'res/cat.png',
-        title: 'Project 2',
+        title: 'Discord Birthday Bot',
         status: 'In Progress',
-        skills: 'N/A',
-        description: 'LSDKHFLSKDHJ :SDLJF:SLDKF LSKDHFLSKDJF LSDKFHLSKDJFLSDHF SLKDFHSKDJFHSKDJGFH',
-        link: "projectTaskManager.php"
+        skills: 'Python, Discord API',
+        description: 'N/A',
+        link: "projectDiscordBdayBot.php"
     },
     {
         id: 2,

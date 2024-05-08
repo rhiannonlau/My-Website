@@ -59,7 +59,7 @@
             and I have been consistently updating and maintaining it since.
             It was during this time when I also began taking on more personal and academic projects that I thought were fit to be shown in a portfolio such as this,
             such as the <a href="" class="yellow">Task Manager project</a> and the <a href="" class="yellow">Singing Willow Farm Website commission</a>.</br></br>
-            Both my parents had a passion for computer science, and they introduced me to my first coding application when I was 8: Scratch.
+            Both my parents had a passion for computer science, and they introduced me to my first coding application when I was 8 years old: Scratch.
             Scratch was as much a coding application as it was a game to me, and it was the first step into a much larger world that I've become so passionate about.</br></br>
             When I'm not coding or studying, some other hobbies I love to do in my free time include gaming, cooking and baking, sewing clothes, and reading.</br></br>
             Here are some fun facts about me:</br>
@@ -71,8 +71,9 @@
                 <li>I finished RCM grade 8 piano</li>
             </ul>
         <p class="white large">
-            Thank you for taking the time to review my portfolio.
-            Please feel free to look into my Github and LinkedIn using the icons at the top right, and if you would like to contact me, I am always reachable through LinkedIn at any time.
+            Thank you for taking the time to review my portfolio.</br>
+            Please feel free to look into my Github and LinkedIn using the icons at the top right.
+            If you would like to contact me, I am always reachable through LinkedIn at any time.
         </p>
     </div>
 </body>

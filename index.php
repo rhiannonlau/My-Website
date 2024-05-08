@@ -59,7 +59,6 @@
         <h1 class="white">Home</h1>
         <a class="white viewButton" href="projectsPage.php">View All</a>
     </div>
-    <!--
     <h2 class="white">Current project</h2>
     <div style="padding: 0 20% 0 20%">
         <div class="currProjCard">
@@ -96,7 +95,7 @@
         </div>
         <div style="clear: both"></div> <-- ensures the surrounding div adheres to the images' borders ->
     </div>
-    -->
+    <!--
     <div class="container" style="border: 3px solid green;">
         <div class="data" style="border: 3px solid green; width: 98%">
             <div class="body" style="margin: auto; width: 70%; border: 3px solid green; padding: 10px;">
@@ -106,6 +105,6 @@
         </div>
     </div>
     <script src="projects.js"></script>
-    <!-- could add filtering again for this page -->
+    <-- could add filtering again for this page -->
 </body>
 </html>
