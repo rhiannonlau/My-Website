@@ -29,7 +29,7 @@ const project=[
         title: 'Project 3',
         status: 'In Progress',
         skills: 'N/A',
-        description: 'LSDKHFLSKDHJ :SDLJF:SLDKF LSKDHFLSKDJF LSDKFHLSKDJFLSDHF SLKDFHSKDJFHSKDJGFH',
+        description: '[description]',
         link: "projectTaskManager.php"
     },
     {
@@ -38,7 +38,7 @@ const project=[
         title: 'Project 4',
         status: 'In Progress',
         skills: 'N/A',
-        description: 'LSDKHFLSKDHJ :SDLJF:SLDKF LSKDHFLSKDJF LSDKFHLSKDJFLSDHF SLKDFHSKDJFHSKDJGFH',
+        description: '[description]',
         link: "projectTaskManager.php"
     },
     {
@@ -47,7 +47,7 @@ const project=[
         title: 'Project 5',
         status: 'In Progress',
         skills: 'N/A',
-        description: 'LSDKHFLSKDHJ :SDLJF:SLDKF LSKDHFLSKDJF LSDKFHLSKDJFLSDHF SLKDFHSKDJFHSKDJGFH',
+        description: '[description]',
         link: "projectTaskManager.php"
     }
 ]
@@ -130,7 +130,7 @@ if (pathname.includes("index.php")) {
     const displayItem = (items)=> {
         document.getElementById('root').innerHTML=items.map((item)=>{
             var {id, image, title, description, link} = item;
-            if (id == 4) { // change to a variable later
+            if (id == 4) {
                 return (
                     `<a class='box' style='width: 150%; height: 75%' href='${link}'>
                         <div class='img-box' style='height: 75%'>
@@ -145,16 +145,27 @@ if (pathname.includes("index.php")) {
             }
             else {
                 return (
-                    //`<div style='float: left; width: 350px; display: block;'>
-                    `<a class='box' href='${link}' style='height: 33%; width: 100%; float: left; display: flex; flex-direction: column; overflow: hidden'>
-                        <div class='img-box' style='display: block'>
+                    /* position: absolute;
+                    left: 53%;
+                    height: 15%;
+                    width: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;'> */
+                    `<a class='box' href='${link}' style='position: absolute;
+                                                        left: 53%;
+                                                        height: 15%;
+                                                        width: 25%;
+                                                        display: flex;
+                                                        flex-direction: row; /* Change to row */
+                                                        overflow: hidden;'>
+                        <div class='img-box2' style='width: 40%;'> <!-- Removed display: inline-block; and padding-right: 50% -->
                             <img class='images' src=${image}></img>
                         </div>
-                        <div style='width: 90%; display: block'>
+                        <div style='width: 60%;'> <!-- Adjusted width to accommodate remaining space -->
                             <p style='color: #DDDDDD; text-align: left;'><span class='large'>${title}</span></br><span style='text-align: center; font-size: 12px;'>${description}</span></p>
                         </div>
                     </a>`
-                    //</div>`
                 )
             }
         }).join('')
