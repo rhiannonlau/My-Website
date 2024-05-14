@@ -101,12 +101,15 @@
     <div class="container">
         <div class="data" style="width: 98%">
             <div class="body" style="margin: auto; width: 70%; padding: 10px;">
-                <h1 class='white'>Current project</h1>
+                <h1 style="color: white; padding: 0px 50px;">Current project</h1>
                 <div id="root" style="margin-left: 35px;"></div>
             </div>
         </div>
     </div>
     <script src="projects.js"></script>
     <!-- could add filtering again for this page -->
+
+    <h1 style="color: white; padding: 0px 17%;">Current project</h1>
+    <p class="white large"></p>
 </body>
 </html>
