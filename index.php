@@ -23,7 +23,7 @@
             <button class="sidebarDropdownBtn" style="height: 35px" href="projectsPage.php">Projects <span>&#x25BC;</span></button> <!-- the height specifier is necessary here instead of css-->
             <div id="projectsDrop" class="sidebarDropdownContent">
                 <a href="projectsPage.php" class="sidebarItem sidebarBtn">All Projects</a>
-                <a href="#" class="sidebarItem sidebarBtn">Project 1</a>
+                <a href="projectDiscordBdayBot.php" class="sidebarItem sidebarBtn">Discord Birthday Bot</a>
                 <a href="projectTaskManager.php" class="sidebarItem sidebarBtn">Task Manager</a>
             </div>
         </div>

@@ -10,8 +10,8 @@ const project=[
         image: 'res/cat.png',
         title: 'Task Manager Website',
         status: 'Finished',
-        skills: 'HTML, PHP, JavaScript, CSS, Selenium',
-        description: 'LSDKHFLSKDHJ :SDLJF:SLDKF LSKDHFLSKDJF LSDKFHLSKDJFLSDHF SLKDFHSKDJFHSKDJGFH',
+        skills: 'PHP, JavaScript, CSS, SQL, Selenium',
+        description: 'Website for managing tasks and projects.',
         link: "projectTaskManager.php"
     },
     {
@@ -19,18 +19,18 @@ const project=[
         image: 'res/cat.png',
         title: 'Discord Birthday Bot',
         status: 'In Progress',
-        skills: 'Python, Discord API',
+        skills: 'Python, SQL, Discord API',
         description: 'N/A',
         link: "projectDiscordBdayBot.php"
     },
     {
         id: 2,
         image: 'res/cat.png',
-        title: 'Project 3',
+        title: 'Dance AI',
         status: 'In Progress',
-        skills: 'N/A',
+        skills: 'Python, CNN',
         description: '[description]',
-        link: "projectTaskManager.php"
+        link: "projectDanceAI.php"
     },
     {
         id: 3,
@@ -132,7 +132,7 @@ if (pathname.includes("index.php")) {
             var {id, image, title, description, link} = item;
             if (id == 4) {
                 return (
-                    `<a class='box' style='width: 150%; height: 75%' href='${link}'>
+                    `<a class='box' style='width: 150%; height: 100%' href='${link}'>
                         <div class='img-box' style='height: 75%'>
                             <img class='images' src=${image}></img>
                         </div>
@@ -157,7 +157,7 @@ if (pathname.includes("index.php")) {
                                                         height: 15%;
                                                         width: 25%;
                                                         display: flex;
-                                                        flex-direction: row; /* Change to row */
+                                                        flex-direction: row; /* places the image and text side by side */
                                                         overflow: hidden;'>
                         <div class='img-box2' style='width: 40%;'> <!-- Removed display: inline-block; and padding-right: 50% -->
                             <img class='images' src=${image}></img>

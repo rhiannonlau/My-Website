@@ -54,9 +54,27 @@
     <p class="white large">Github repository link: <a target="_blank" rel="noopener noreferrer" href="https://github.com/rhiannonlau/CISC327_A2" class="yellow">github.com/rhiannonlau/CISC327_A2</a></p>
     <p class="white large">Technical details:</p>
     <ul class="white large" style="list-style-type:disc; padding-left: 100px;">
-        <li>Group members: Two other Queen's students</li>
-        <li>Languages: php, css, javascript</li>
-        <li>Software: XAMPP, Selenium</li>
+        <li>Group members: Two other university students</li>
+        <li>Languages: PHP, CSS, JavaScript, SQL</li>
+        <li>Software: XAMPP, MySQL, Selenium</li>
+    </ul>
+    <p class="white large">Description:</p>
+    <p class="white">This project was created as an academic, culminating assignment for the course CISC 327 - Quality Assurance to apply testing techniques to a self-made application.
+        Our group created a website that helps users manage solo or group projects and tasks.</br></br>
+        This website allows users to add new projects, during the creation of which they can add a name, a description, a deadline, and any group or team members.
+        Within a created project, the user can then create a new task by specifying a name, a deadline, a priority number (1-highest, 5-lowest), the amount of progress made (0 - 100) and assign any number of teammates already in the project to this task.</br></br>
+        Projects and tasks can be edited or deleted at any time.</br></br>
+        This project utilizes PHP, CSS, and JavaScript for the web development. SQL was used to store the project data.
+        Lastly, a large variety of testing strategies were performed on this website, including white and black box testing techniques with the help of Selenium.</br></br>
+        The testing methods included:
+    </p>
+    <ul class="white" style="list-style-type:disc; padding-left: 100px;">
+        <li>Decision coverage testing</li>
+        <li>Basic block coverage testing</li>
+        <li>Front end test scripts</li>
+        <li>Back end test scripts</li>
+        <li>Unit testing</li>
+        <li>Test cases</li>
     </ul>
 </body>
 </html>

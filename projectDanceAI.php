@@ -29,10 +29,10 @@
         <a href='aboutMePage.php' class="sidebarItem sidebarBtn">About Me</a>
     </div>
 
-    <!-- Page --> <!-- put this part (projects -> discord bday bot) in js? so that the title doesnt have to be altered every time? -->
+    <!-- Page -->
     <div style="display: inline-flex;">
         <button id="sidebarOpenBtn" onclick="animate_sidebar()" class="sidebarOpenBtn xlarge"><span>&#9776;</span></button>
-        <p style="color: #DDDDDD; padding-left: 10px;"><a style="color: #DDDDDD" href="projectsPage.php">Projects</a> &#9656 <b><a style="color: #DDDDDD" href="projectDiscordBdayBot.php">Discord Birthday Bot</a></b></p>
+        <p style="color: #DDDDDD; padding-left: 10px;"><a style="color: #DDDDDD" href="projectsPage.php">Projects</a> &#9656 <b><a style="color: #DDDDDD" href="projectDanceAI.php">Dance AI</a></b></p>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/rhiannonlau" style="position: absolute; top: 8px; right: 130px"> <!-- target="_blank" opens link in new tab -->
             <img src="res/github_logo_transparent.png" alt="Link to my Github"
                 style="
@@ -49,22 +49,17 @@
         </a>
     </div>
 
-    <h1 class="white">Project: Discord Birthday Bot</h1>
-    <h2 class="white">Type: Self created project</h2>
-    <p class="white large">Github repository link: <a target="_blank" rel="noopener noreferrer" href="https://github.com/rhiannonlau/Discord-Bots" class="yellow">github.com/rhiannonlau/Discord-Bots</a></p>
+    <h1 class="white">Project: Dance AI</h1>
+    <h2 class="white">Type: Self-created project</h2>
+    <p class="white large">Github repository link: <a target="_blank" rel="noopener noreferrer" href="https://github.com/rhiannonlau/CISC327_A2" class="yellow">github.com/rhiannonlau/CISC327_A2</a></p>
     <p class="white large">Technical details:</p>
     <ul class="white large" style="list-style-type:disc; padding-left: 100px;">
         <li>Group members: None</li>
-        <li>Languages: Python, SQL</li>
-        <li>Software: Discord Bot API</li>
+        <li>Languages: Python</li>
+        <li>Techniques: Deep learning (Convolutional Neural Networks) and probabilistic inference (Bayes Nets)</li>
     </ul>
     <p class="white large">Description:</p>
-    <p class="white">A bot that can be interacted with in Discord.
-        This bot allows users to add the birthdates of any members in their server, as well as optionally add their current age.
-        At a specified time (defaulted to midnight) on a corresponding birthday,
-        the respective user will be mentioned in a celebratory birthday message--which can also be altered beforehand--the default being "Happy Birthday, @user."</br></br>
-        Birthdays, ages, and the birthday message can all be edited at any time, and birthdays can be deleted.</br></br>
-        The bot is coded in Python, and uses SQL to keep track of the data.
+    <p class="white">Apply motion capture from video, and extracting the motions for further use. Run some basic analysis of the mocap outputs for dancer identification or dance style detection.
     </p>
 </body>
 </html>
