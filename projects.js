@@ -1,10 +1,12 @@
+//import { PROJECTS } from "../constants"
+
 function open(projLink) {
     window.location.href = projLink;
 }
 
-pathname = window.location.pathname;
+const pathname = window.location.pathname;
 
-const project=[
+const PROJECTS=[
     {
         id: 0,
         image: 'res/cat.png',
@@ -51,6 +53,8 @@ const project=[
         link: "projectTaskManager.php"
     }
 ]
+
+
 
 function sortAlphabetically(array) {
     return array.slice().sort((a, b) => {
@@ -122,12 +126,12 @@ function sortInProgress(array) {
 if (pathname.includes("index.php")) {
     // mimic index.php formatting so that it displays the last 4 in categories
     // with the last one being the big card
-    const categories = [...new Set(project.map((item)=> {return item}))]
+    const categories = [...new Set(PROJECTS.map((item)=> {return item}))]
 
     const lastItem = sortMostRecent(categories).slice(0);
     const lastFourItems = sortMostRecent(categories).slice(0, 4);
 
-    const displayItem = (items)=> {
+    var displayItem = (items)=> {
         document.getElementById('root').innerHTML=items.map((item)=>{
             var {id, image, title, description, link} = item;
             if (id == 4) {
@@ -175,7 +179,7 @@ if (pathname.includes("index.php")) {
 }
 
 else if (pathname.includes("projectsPage.php")) {
-    const categories = [...new Set(project.map((item)=> {return item}))]
+    const categories = [...new Set(PROJECTS.map((item)=> {return item}))]
 
     document.getElementById('searchBar').addEventListener('keyup', (e)=>{
         const searchData = e.target.value.toLowerCase();
@@ -217,7 +221,7 @@ else if (pathname.includes("projectsPage.php")) {
         displayItem(dispData)
     });
 
-    const displayItem = (items)=> {
+    var displayItem = (items)=> {
         document.getElementById('root').innerHTML=items.map((item)=>{
             var {image, title, status, skills, link} = item;
             return (

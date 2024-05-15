@@ -109,7 +109,7 @@
     <script src="projects.js"></script>
     <!-- could add filtering again for this page -->
 
-    <h1 style="color: white; padding: 0px 17%;">Current project</h1>
-    <p class="white large"></p>
+    <h1 style="color: white; padding: 0px 17%;">About This Website</h1>
+    <p class="white large" style="padding: 0px 17%;">This website was created by me using PHP, CSS, and JavaScript. I referred to some guides and online forums, but no other software, including A.I. like ChatGPT, were used.</p>
 </body>
 </html>
